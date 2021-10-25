@@ -1,13 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Zen Kurenaido", sans-serif;
+  background: #eff3f4ce;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.center {
+  text-align: center;
+}
+a {
+  color: #636363;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+}
+.container {
+  background: #fff;
+  padding: 50px;
+  width: 50%;
+  margin: 40px 40px;
+  box-shadow: 0 5px 15px 0 rgba(46, 61, 73, 0.12);
+  border-radius: 12px;
+  font-family: "Zen Kurenaido", sans-serif;
+}
+.container-note{
+  width: 50%;
+}
+.heading {
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  color: #636363;
+}
+.container .heading{
+  margin-top: -30px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form input,
+textarea {
+  width: 80%;
+  height: 40px;
+  padding: 8px;
+  border-radius: 12px;
+  border: 1px solid #dbe2e8;
+  font-size: 14px;
+  outline: none;
+  font-family: "Zen Kurenaido", sans-serif;
+  box-shadow: 0 2px 2px 0 rgba(46, 60, 73, 0.05);
+}
+.form input:focus,
+textarea:focus {
+  outline: none;
+}
+.form button {
+  width: 50%;
+  background: #8c7bee;
+  color: #fff;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  padding: 5px;
+  cursor: pointer;
 }
