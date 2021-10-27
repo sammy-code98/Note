@@ -7,8 +7,18 @@ class Note extends Component {
         <h2 className="note_title">{this.props.note.title}</h2>
         <p className="note_message">{this.props.note.message}</p>
         <div className="control-buttons">
-            <button className="edit">Edit</button>
-            <button className="delete">Delete</button>
+          <button className="edit">Edit</button>
+          <button
+            className="delete"
+            onClick={() =>
+              this.props.dispatch({
+                type: "DELETE_NOTE",
+                id: this.props.note.id,
+              })
+            }
+          >
+            Delete
+          </button>
         </div>
       </div>
     );
